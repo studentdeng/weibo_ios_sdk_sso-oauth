@@ -21,6 +21,7 @@ https://github.com/mobileresearch/weibo_ios_sdk_sso-oauth/wiki/%E5%B8%B8%E8%A7%8
 3. 此时直接编译将出错，因为未声明app_key等三个常量，Xcode中修改<em>sinaweibo_sdk_oauth_demo/SNAppDelegate.h</em>文件，将`//#define kAppKey     @"your app_key"`等三行的注释去掉，并根据自己应用的属性给kAppKey等常量赋值；
 4. 编译并在模拟器上运行；
 5. demo只有一个页面，包括登录/退出/获取用户信息/发表状态等按钮；运行后需要先登录才能进行其他操作。
+6. 在后台管理应用基本信息页面中填写 Apple ID 和 Bundle ID
 
 ## 添加SDK至自己工程中 ##
 第三方应用使用SDK需要完成DEMO中包含的基本工作。创建自己的工程，并将*weibo_sdk_oAuth/src*目录下*JSONKit*和*SinaWeibo*两个文件夹拷贝至自己工程目录中并添加至工程。
